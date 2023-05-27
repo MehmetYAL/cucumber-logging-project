@@ -6,16 +6,25 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.Keys;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+
+@Slf4j
 public class Google_StepDefinitions {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
+   // Logger log= LogManager.getLogger(this.getClass());
+   // Logger log= LoggerFactory.getLogger(this.getClass());
     @Given("user is on the Google search page")
     public void user_is_on_the_google_search_page() {
+        log.info("navigating to https://www.google.com");
         Driver.getDriver().get("https://www.google.com");
-        googleSearchPage.rejectCookieButton.click();
+        //googleSearchPage.rejectCookieButton.click();
         BrowserUtils.sleep(1);
     }
 
