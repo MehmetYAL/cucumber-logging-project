@@ -1,1 +1,1 @@
-[INFO ] [2900] [2023-05-27 18:55:28.623] [main] [com.cydeo.step_definitions.Google_StepDefinitions] - "navigating to https://www.google.com"
+[ERROR] [33924] [2023-05-27 19:28:34.902] [main] [com.cydeo.step_definitions.Hooks] - "@After: RUNNING AFTER EACH SCENARIO"
